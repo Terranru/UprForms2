@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5a76b68-6f66-43cf-8abe-706ee8c0c63c">
+  <producedTypes>
+    <objectType typeId="d2c1a3bf-70bb-46c1-926f-da39e3cdbe82" valueTypeId="3e42cb3e-f7a2-435b-bed7-38d083e6c635"/>
+    <refType typeId="69744636-0330-4ac6-a5ec-01a3dbebea4c" valueTypeId="0540bed5-cf95-409d-bb1f-1565faa8da2d"/>
+    <selectionType typeId="7669ee1e-fdbf-4ca4-af89-e8289dad0393" valueTypeId="e1713b2c-52b0-4e38-82ee-11673abe74a0"/>
+    <listType typeId="37d8b2d4-9520-4169-be03-abadab5316af" valueTypeId="815d2dc3-c9ec-43b5-8a70-1d154ba43ebc"/>
+    <managerType typeId="5c4fee00-2126-406b-82fb-5e3b4c9623b7" valueTypeId="114bf480-c344-4d64-af24-7b630b573151"/>
+  </producedTypes>
+  <name>ПриходнаяНакладная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приходная накладная</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриходнаяНакладная.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ОстаткиТоваров</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="9d6fc34d-f7b2-48a3-bfb1-9f72cd9846e1">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="e1a52a24-4c0e-4315-a386-58245f44df29">
+    <producedTypes>
+      <objectType typeId="51db325b-4e63-475e-ac2a-d0ce99b2a6b7" valueTypeId="17defcc1-145f-4f2e-bb8f-0ed1475fcf02"/>
+      <rowType typeId="970038da-6efa-4d0a-b327-1c9f1de8ecf6" valueTypeId="ceb15a5a-e36c-4f03-a12b-7114e10538f9"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <attributes uuid="b1aa05de-c8b4-4882-a320-deb99fbc5bde">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товары</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="71e9da63-5f8d-49fb-a225-0459e09cb3ac">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9c8da942-897e-4796-865c-635e05e1001d">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

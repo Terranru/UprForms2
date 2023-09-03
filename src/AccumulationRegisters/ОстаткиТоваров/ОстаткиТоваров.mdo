@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c14ec35-1615-42e4-b909-b7e17d41aec4">
+  <producedTypes>
+    <selectionType typeId="40595958-2a4c-47b7-83a1-fe9b0b2103ce" valueTypeId="6e48932d-e302-4284-a6f2-84257ef07c31"/>
+    <listType typeId="3874add1-f587-456e-9b41-11f1ea63a93b" valueTypeId="394b453c-2863-4306-9d16-741592a9a746"/>
+    <managerType typeId="7089fa8b-4bfe-418e-b3b3-f25a8cc9897d" valueTypeId="dcc5a802-deb0-4e88-9d1d-53dbcab5121a"/>
+    <recordSetType typeId="49e9b461-a9e8-457a-a305-2bbc8c15c4a0" valueTypeId="8a4bb51f-3bdb-4feb-b5ee-fe577fe12de7"/>
+    <recordKeyType typeId="b2697ab4-91d4-418a-9200-f143da40bb9a" valueTypeId="05483015-9aff-4ad5-82c1-eb91a644c575"/>
+    <recordType typeId="65580127-fb3b-4dc9-9932-f92af17116b1" valueTypeId="12cbcee5-fde4-4512-a219-01d586718a28"/>
+  </producedTypes>
+  <name>ОстаткиТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="6bfdf3ff-33fc-4c72-aeed-48601ed4c9d4">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="056d2088-1ccb-49c6-aa65-ca118845216a">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товары</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ff72aee7-3a82-4423-b14a-2f36d71006e1">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
